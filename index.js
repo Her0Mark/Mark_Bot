@@ -134,8 +134,8 @@ client.on("message", async message => {
   }
 });
 
-client.login(config.json);
+//client.login(config.json);
 
-//client.login(process.env.token);
+client.login(process.env.BOT_TOKEN);
 
 //client.login(config.token);
