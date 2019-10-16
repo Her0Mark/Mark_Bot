@@ -116,6 +116,20 @@ client.on("message", async message => {
       .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
+  [Command("unban")]
+[RequireBotPermission(GuildPermission.BanMembers)]
+public async Task UnbanTask(ulong userId)
+{
+    await Context.Guild.RemoveBanAsync(userId);
+    // Unbanned
+}
+  
+  
+  
+  
+  
+  
+  
   
   if(command === "clear") {
     // This command removes all messages from all users in the channel, up to 100.
