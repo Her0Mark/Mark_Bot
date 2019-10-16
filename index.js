@@ -1,11 +1,3 @@
-
-
-const token = 'NjMzNjk1ODgyNzU5NTAzODcz.XaccVg.KdNHr5KyhdFlKhlc2vfLBdMqIAI';
-
-const PREFIX = '!';
-
-
-
 // Load up the discord.js library
 const Discord = require("discord.js");
 
