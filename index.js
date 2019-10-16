@@ -33,7 +33,7 @@ client.on("guildDelete", guild => {
 
 client.on('guildMemberAdd', member => {
     member.send(
-      `Welcome on the server! Please be aware that we won't tolerate troll, spam or harassment. Have fun 😀`
+      `Welcome on the server! I'll message Mark to come online and meet you. Have a look around in the mean time 😀`
     )
   })
 
