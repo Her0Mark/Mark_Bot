@@ -32,9 +32,8 @@ client.on("guildDelete", guild => {
 });
 
 client.on('guildMemberAdd', member => {
-  member.send(
-    `{user}, Welcome to **{server}**! I will notify the admin to come online. Have a look around at the content of the server. If you have any questions, please feel free to ask. I am the Mark_Bot and I'm pleased to meet you {user} :wink: !`
-  )
+ // member.send(
+  client.channels.get(`channelID`).send(`{user}, Welcome to **{server}**! I will notify the admin to come online. Have a look around at the content of the server. If you have any questions, please feel free to ask. I am the Mark_Bot and I'm pleased to meet you {user} :wink: !`);
 });
 
 
