@@ -31,6 +31,12 @@ client.on("guildDelete", guild => {
   client.user.setActivity(`Serving ${client.guilds.size} servers`);
 });
 
+client.on('guildMemberAdd', member => {
+  member.send(
+    `Welcome on the server! Please be aware that we won't tolerate troll, spam or harassment. Have fun 😀`
+  )
+});
+
 
 client.on("message", async message => {
   // This event will run on every single message received, from any channel or DM.
