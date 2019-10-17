@@ -50,11 +50,11 @@ const agenda = new Agenda({
   processEvery: '30 minutes'
 });
 
-const Discord = require('discord.io');
-const bot = new Discord.Client({
-    autorun: true,
-    token: process.env.BOT_TOKEN
-});
+//const Discord = require('discord.io');
+//const bot = new Discord.Client({
+    //autorun: true,
+    //token: process.env.BOT_TOKEN
+//});
 
 let getAGreeting = function(user) {
   let greetings = [
