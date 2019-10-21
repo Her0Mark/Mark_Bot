@@ -148,7 +148,7 @@ String.prototype.replaceAll = function(search, replacement) {
 client.on('message', msg => {
 
 // Quits the Bot
-if (msg.content === '!quitbot' && msg.author.id === '109122837524017152') {
+if (msg.content === '!quitbot' && msg.author.id === '1319457567728205824') {
   msg.reply('Goodbye!');
   client.destroy();
   console.log('Disconnected...');
