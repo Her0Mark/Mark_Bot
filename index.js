@@ -1,3 +1,9 @@
+
+//21 October 2019 - Mark Pretorius working on hes first discord bot
+//******************************************************************
+
+
+
 // Load up the discord.js library
 const Discord = require("discord.js");
 
@@ -148,14 +154,14 @@ String.prototype.replaceAll = function(search, replacement) {
 client.on('message', msg => {
 
 // Quits the Bot
-if (msg.content === '!quitbot' && msg.author.id === '1319457567728205824') {
+if (msg.content === 'Jarvis quit' && msg.author.id === '1319457567728205824') {
   msg.reply('Goodbye!');
   client.destroy();
   console.log('Disconnected...');
   process.exit();
 
 // Reminds the User
-} else if (msg.content.toLowerCase().startsWith('!remindme')) {
+} else if (msg.content.toLowerCase().startsWith('Jarvis remindme')) {
   var message = msg;
   try {
     
@@ -210,11 +216,11 @@ if (msg.content === '!quitbot' && msg.author.id === '1319457567728205824') {
   }
 
 // List of commands
-}else if (msg.content.toLowerCase() === "!reminderbot") {
-  msg.channel.send("Hello I am reminder bot:\n\n!reminderbot \t\tList of all Commands\n!quit \t\tTurns off the bot\n!remindme \t\t {time} {message}\n\t{time} Please have the amount of time be denoted by a time character.\n\t\tm - minutes, s - seconds, d - days.\n!remind {@User} {time} {message}\n\t{time} Please have the amount of time be denoted by a time character.\n\t\tm - minutes, s - seconds, d - days.\n\t{@User} So far you can use the user's name with the @ symbol.\n\n--- Created and Managed by pixlbreaker ---");
+}else if (msg.content.toLowerCase() === "Jarvis reminderhelp") {
+  msg.channel.send("Hello I am Jarvis:\n\nJarvis reminderhelp \t\tList of all Commands\nJarvis quit \t\tTurns off the bot\nJarvis remindme \t\t {time} {message}\n\t{time} Please have the amount of time be denoted by a time character.\n\t\tm - minutes, s - seconds, d - days.\nJarvis remind {@User} {time} {message}\n\t{time} Please have the amount of time be denoted by a time character.\n\t\tm - minutes, s - seconds, d - days.\n\t{@User} So far you can use the user's name with the @ symbol.\n\n--- Created and Managed by Mark Pretorius ---");
 
 // Reminds a specific user
-} else if (msg.content.toLowerCase().startsWith('!remind')) {
+} else if (msg.content.toLowerCase().startsWith('Jarvis remind')) {
   var message = msg;
   try {
     
