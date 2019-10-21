@@ -155,7 +155,7 @@ if (msg.content === '!quitbot' && msg.author.id === '319457567728205824') {
   process.exit();
 
 // Reminds the User
-} else if (msg.content.toLowerCase().startsWith('Jarvis remindme')) {
+} else if (msg.content.toLowerCase().startsWith('Jarvisremindme')) {
   var message = msg;
   try {
     
