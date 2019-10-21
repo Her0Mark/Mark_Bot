@@ -148,14 +148,14 @@ String.prototype.replaceAll = function(search, replacement) {
 client.on('message', msg => {
 
 // Quits the Bot
-if (msg.content === '!quitbot' && msg.author.id === '109122837524017152') {
+if (msg.content === '!quitbot' && msg.author.id === '319457567728205824') {
   msg.reply('Goodbye!');
   client.destroy();
   console.log('Disconnected...');
   process.exit();
 
 // Reminds the User
-} else if (msg.content.toLowerCase().startsWith('!remindme')) {
+} else if (msg.content.toLowerCase().startsWith('Jarvis remindme')) {
   var message = msg;
   try {
     
